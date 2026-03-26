@@ -52,7 +52,7 @@ Pour faire fonctionner ce projet sur votre machine locale (WampServer, Laragon o
    Accédez au projet via `http://localhost/projet-progressif/index.php`.
 
 <img width="1397" height="887" alt="ifosup running club" src="https://github.com/user-attachments/assets/35de18ce-a10d-4761-89ab-342566043315" />
----
+
 ## 📂 Structure du Projet (Arborescence)
 ```text
 /projet-progressif
@@ -86,5 +86,3 @@ Pour faire fonctionner ce projet sur votre machine locale (WampServer, Laragon o
 ├── .htaccess               # Configuration serveur
 ├── robots.txt              # Gestion de l'indexation
 └── readme.md               # Documentation du projet (ce fichier)
-
-
