@@ -1,0 +1,463 @@
+/* 
+Sources :
+>> html5doctor.com Reset Stylesheet (v1.6.1)- Richard Clark 
+>> http://sickdesigner.com/resources/HTML5-starter-pack/ - Radu Chelariu
+
+*/
+
+/* RESET GENERAL */
+
+ a, abbr, acronym, address, applet, article, aside, audio,
+ b, blockquote, big, body,
+ center, canvas, caption, cite, code, command,
+ datalist, dd, del, details, dfn, dl, div, dt, 
+ em, embed,
+ fieldset, figcaption, figure, font, footer, form, 
+ h1, h2, h3, h4, h5, h6, header, hgroup, html,
+ i, iframe, img, ins,
+ kbd, keygen,
+ label, legend, li, 
+ meter,
+ nav,
+ object, ol, output,
+ p, pre, progress,
+ q, 
+ s, samp, section, small, span, source, strike, strong, sub, sup,
+ table, tbody, tfoot, thead, th, tr, td, tt,
+ u, ul, 
+ var, video {
+    margin:0;
+    padding:0;
+    border:0 none;
+    outline:0;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* suppression des bordures par défaut (Source: Tantek) */
+
+ a, img, a img, iframe, form, fieldset, 
+ abbr, acronym, object, applet, table {
+	border: none; 
+	}
+
+/* Conteneurs sémantiques de HTML 5 */
+article, aside, audio, canvas, command, datalist, details, dialog, embed, figcaption, figure, footer, header, hgroup, keygen, main, menu,  meter, nav, output, progress, section, source, summary, video{ 
+	display:block;
+	}
+section, header, aside, nav, article, footer, figure {
+padding:1px 0; /* pour la fusion des marges*/
+}
+ 
+mark, rp, rt, ruby, summary, time{ 
+	display: inline; 
+	}
+	
+/* STYLES DE BASE */	
+
+
+/* Recommandation du W3C (adaptation partielle) */
+
+ br:before			{ content: "\A" ;}
+ :before, :after	{ white-space: pre-line; }
+ :link, :visited	{ text-decoration: underline ;}
+ :focus				{ outline: thin dotted invert ;}
+
+
+
+ /* --- général --- */
+ 
+* { 
+    -moz-box-sizing: border-box; /* gestion des boîtes en taille réelle */
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);/* Enlève le layer noir au click event sur les appareils iOS(Doc Apple officielle) */
+    -webkit-text-size-adjust: 100%;/* corrige bug affichage sous IOS en paysage */
+    -ms-text-size-adjust: 100%; 
+    -webkit-font-smoothing: antialiased; /*pour forcer l'antialiasing sur Webkit*/
+	}
+
+ html {   
+ 	height: 100%; 
+	width: 100%;  
+	font-size: 100%; 
+ } 
+ 
+body {
+	height: 100%; 
+	width: 100%; 
+	margin: 0;   
+ 	padding: 0;
+	font-family: Arial, Helvetica, FreeSans, sans-serif;
+	font-size: 0.8em; 
+    line-height:1;
+	color: black;   
+ 	background: white; 
+}
+
+
+
+
+ h1, h2, h3, h4, h5, h6 {   
+ 	line-height: 1.2;   
+ 	font-weight: bold;    
+ 	font-style: normal;
+	-moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig"; 
+ } 
+ 
+ /* Rapprochement des titres du texte et définition de leur hauteur (plus de lisibilité).  */
+ h1					{ font-size: 1.63em; padding: .85em 0 0 0 ; }
+ h2					{ font-size: 1.35em; padding: .85em 0 0 0 ; }
+ h3					{ font-size: 1em; padding: .75em 0 0 0 ; }
+ h4, h5				{ font-size: 1em; padding: .75em 0 0 0 ; }
+ h6					{ font-size: .85em; padding: .75em 0 0 0 ;}
+
+ /* --- Texte et Paragraphes --- */
+ 
+ font { 
+	color: inherit !important; 
+	font: inherit !important; 
+	color: inherit !important;  
+	}
+
+p, blockquote, ul, 
+ fieldset, form, ol, dl { font-size: 1em; }
+ 
+ p {   
+	padding: .75em 0; /* Marges plus faibles que par défaut  */ 
+
+    /* début Hyphenation */
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    /* fin Hyphenation */
+ } 
+ 
+ address {   
+ 	padding: .75em 0;   
+ 	font-style: normal; 
+ }
+ 
+ b, strong				{ font-weight: bolder ;}
+ i, q, cite, em, var	{ font-style: italic ;}
+ pre, tt, code, kbd, 
+ samp					{ font-family: monospace ;}
+ pre					{ white-space: pre ;}
+ big					{ font-size: 1.17em ;}
+ small, sub, sup		{ font-size: .85em ;} 
+ sub					{ vertical-align: sub ;}
+ sup					{ vertical-align: super; }
+ em 					{ font-style: italic; font-weight: bolder ;} 
+ del					{ text-decoration: line-through;}
+ hr						{ border: 1px inset; }
+ ins					{ text-decoration: underline ;}
+
+ /* fonts pour les pictogrammes */
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../fonts/modernpictograms/modernpics-webfont.eot');
+    src: url('../fonts/modernpictograms/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/modernpictograms/modernpics-webfont.woff') format('woff'),
+         url('../fonts/modernpictograms/modernpics-webfont.ttf') format('truetype'),
+         url('../fonts/modernpictograms/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal; }	
+ 
+.icon:before 
+{
+    content: attr(data-icon);
+    font-family: ModernPictogramsNormal;
+    /* other styles here */
+}
+/*http://modernpictograms.com/*/
+
+ 
+ /* --- Liens --- */
+
+/* a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	border: none; 
+	text-decoration: underline;
+	display:inline-block;
+	width: auto;
+	height: auto; 
+}  */
+
+ /* Pas de bordure pointillée ou halo lors du clic sur un lien */ 
+   a:hover, a:focus, a:active {   
+ 	outline: none; 
+ }  
+
+ /* Pas de bordure autour des images dans les liens */ 
+  a img, :link img, :visited img {
+	border: 0;
+	border: none;
+	color: inherit; 
+	}
+
+/* ::selection applique des règles de décoration à la portion du texte qui a été sélectionné, nécessite un préfixe pour mozilla  */
+::-moz-selection {  }
+::selection {  }	
+	
+	
+/* aspect particulier pour le lien du menu qui correspond à la page sur laquelle on se trouve */
+/*  a[href="#"]:link, a[href*="#"]:visited, a[href="#"]:focus, a[href="#"]:hover, a[href="#"]:active {
+	color:black;
+	text-decoration: none;
+	border: solid 1px black;	 
+ } */
+ 
+ 
+/* --- Listes et Définitions --- */	
+
+nav ul {
+    list-style:none;
+}
+
+ li		{ display: inline-block; /*menu horizontal*/
+		/*display:list-item; menu vertical*/	}
+ ol		{ list-style-type: decimal; }
+ ul, ol {   
+ 	padding: .75em 0 .75em 32px;   
+ 	margin: 0; 
+ } 
+ 
+ ol ul, ul ol, ul ul, ol ol		{ padding-top: 0; padding-bottom: 0 }
+
+dl {   
+ 	margin: .75em 0; 
+	} 
+ dt {   
+ 	margin: .75em 0 0 0;   
+ 	font-weight: bold; 
+ } 
+ dd {   
+ 	margin: .25em 0 .25em 32px; 
+ }  
+ nobr { 
+	white-space: normal; 
+	}
+ marquee {
+	overflow: inherit !important;
+	-moz-binding: none;
+	}
+	
+
+/* --- Tableaux --- */
+
+table {
+	display: table;
+	margin: 0;
+	border: 1px solid #000;
+    border-collapse:collapse;
+    border-spacing:0;
+	/*Pour éviter les problèmes, ajouter malgré tout cellspacing="0" dans le code HTML  */
+	empty-cells: show;
+}
+
+ tr					{ display: table-row }
+ td, th				{ display: table-cell; vertical-align: inherit } 
+ th					{ font-weight: bolder; text-align: center }
+ table td, table th {   
+ 	padding: 4px;  
+ 	border: 1px solid #000; 
+ 	vertical-align: middle; 
+ } 
+ thead, tbody, tfoot	{ vertical-align: middle; }
+ thead					{ display: table-head-group; }
+ tbody					{ display: table-row-group; }
+ tfoot					{ display: table-footer-group; }
+ col					{ display: table-column; }
+ colgroup				{ display: table-column-group; }
+ caption				{ display: table-caption; text-align: center; }
+ 
+ 
+ caption, th, td, center {
+	font-weight: normal;
+	}
+	
+
+
+/* --- Formulaires --- */
+
+form, fieldset {   
+ 	margin: 0;   
+ 	padding: 0;   
+ 	border: none; 
+ } 
+ 
+/* button, textarea, 
+input, select	{ display: inline-block; }  */
+
+input, select, button{
+    vertical-align:middle;
+}
+
+/* input, select, textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    clear: both;
+    float: left;  } */
+
+/* label{ clear: left; } */
+
+	
+ /* --- Gestion des citations --- */ 
+ 
+  blockquote {   
+ 	margin: .75em 0 .75em 20px;   
+ 	padding: 0 0 0 10px;   
+ 	border-left: solid 2px #ddd; 
+ } 
+ 
+ q cite, q q {   
+ 	font-style: normal 
+ } 
+
+/* Supprime les guillemets automatiques (citations courtes) */ 
+ blockquote,q {   
+ 	quotes: none; 
+ } 
+ blockquote:before, blockquote:after, q:before, q:after {   
+ content: ''; /* Nécessaire pour Safari/Chrome */ 
+ content: none;
+ }  
+
+ /* Rapproche les paragraphes dans les listes et citations */ 
+ blockquote p, li p {   
+ 	margin: .5em 0; 
+ }  
+
+
+/* --- divers --- */
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+ /* Met en évidence les abréviations et définitions(ayant un attribut title) */
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+pre, code{ font-family: Monaco, Courier, monospace; }
+
+pre{
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    word-wrap: break-word; }
+	
+	
+/* AJOUTS PERSONNELS */
+
+#wrapper{
+    background:#fff;
+    display: table;
+    float: none; 
+    margin: 40px auto;
+    padding: 40px;
+    position: relative;
+    width: 90%; }
+
+#content{
+        /* display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex; */ 
+		/*La propriété CSS flex permet à un élément flex de modifier ses dimensions afin de remplir l’espace disponible.*/}
+
+main{
+            width: 75%; }
+
+aside{
+          /*   -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            width: 25%;
+            -webkit-flex:1;
+            -ms-flex: 1;
+            flex: 1; */
+			/*définit la façon dont une boîte s'étire pour remplir celle qui la contient, dans la direction de l'affichage du contenant.*/ }
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+
+/* Smartphones */
+@media only screen and (max-width: 469px) {
+
+}
+
+/* Large smartphones */
+@media only screen and (min-width: 470px) and (max-width: 699px) {
+
+}
+
+/* Tablets and landscape large smartphones */
+@media only screen and (min-width: 700px) and (max-width: 1279px) {
+
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1280px) and (max-width: 1499px){
+
+}
+
+/* Large screen */
+@media only screen and (min-width: 1500px) and (max-width: 1799px){
+
+}
+
+/* Very large screen */
+@media only screen and (min-width: 1800px){
+
+}

@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans);
+
+/* Mises en forme générales */
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:0;
+	color: #00386B;
+	background-color:#F4F2F2;
+	margin-top:3rem;
+}
+
+p {
+	margin-top:0.2rem;
+}
+
+
+
+h2{
+
+font-size: 1.9rem;
+}
+
+
+/* wrapper */
+div#wrapper {
+	max-width:1400px;
+    min-width:800px;  
+	margin: auto;
+	padding:0;
+	font-size:1.2rem;
+}
+
+/* section */
+section {
+	margin-bottom:2em;
+	padding-bottom:2em;
+}
+
+/* header */
+header {
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-color: #648BD8;
+	padding-bottom:0.2rem;
+	
+	height:38vh; /* 350px */ 
+	
+	background: white url(../immages/magic.png) no-repeat center bottom; 
+	background-size: cover; 
+	filter:drop-shadow(8px 8px 10px gray);
+	
+	position:relative;
+}
+
+header figure#logo{
+	position:relative;
+	top:1rem;
+	left:6rem;
+}
+
+header figure#logo figcaption{
+	position:relative;
+	top:0.2rem;
+	left:-2rem;
+}
+
+h1
+{
+	font-size:4em;
+	color:#f9c619;
+	position:absolute;
+	top:-3em;
+	left:2em;
+	font-family: 'Magic School One', cursive;
+	background-color:#1010109E;
+	margin-top:5px;
+	padding:15px;
+}
+
+/* Navigation */
+
+header nav {
+
+	font-size: 1.5rem;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background-color:rgba(255,255,255,0.6);
+}
+
+header nav a {
+	padding:0.9rem;
+	color:#00386B;
+	font-weight:600;
+	font-size:150%;
+	text-decoration: none!important;
+
+}
+
+header nav a:hover,.lienactif  {
+	position:relative;
+	top:6px;
+	font-weight:900;
+	font-size:150%;
+	color:#f9c619;
+}
+
+
+/* Mise en page */
+
+section{
+	border:thin solid gray;
+	background-color:#F8F9F9;
+	filter:drop-shadow(8px 8px 10px gray);
+}
+
+
+article#content, article#galerie {
+	box-sizing:border-box;	
+	display:inline-block;
+	vertical-align:top;
+	width:50%; 
+	padding-left:1rem;
+}
+
+aside {
+	box-sizing:border-box;	
+	display:inline-block;
+	vertical-align:top;
+	padding:0.5rem;
+	width:40%;     
+}
+
+/* content */
+
+article#content p {
+
+	margin-top:-1em;
+	margin-bottom:0.4rem;
+	text-align:justify;
+}
+article#content figure{
+	clear:both;
+	margin:0.5em;
+	}
+article#content figure img {
+	margin:0.4rem;
+	float:left;
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+article#content a {
+	color: #00386B;
+	font-weight: bolder;
+}
+
+/* Galerie */
+
+article#galerie ul {
+	text-align:center;
+}
+
+article#galerie ul li{  
+	list-style-type:none;
+	padding:0.5em;
+	display:inline-block;
+	text-align:center;
+	margin:1em;
+	}
+	
+article#galerie ul li figure{  
+text-align:center;
+margin:1rem;
+	}	
+	
+article#galerie figure img{  
+	border: 0.2em solid #fff;
+	border-bottom: 2em solid #fff;       
+	box-shadow: 3px 3px 3px #777;
+	padding:0px;  
+	} 
+article#galerie figure figcaption{  
+	position:relative;
+	bottom:1.7em;
+    font-size:0.8em;	
+	}
+
+	
+/* offres */	
+
+article#content ol#offres {
+display:flex;
+border-spacing:1.5rem;
+table-layout:fixed;
+height:auto;
+justify-content:center;
+padding-top:5vh;
+}	
+
+article#content ol#offres h3 {
+ text-align:center;
+}
+	
+article#content ol#offres > li{
+	display:table-cell;
+	padding:0.5rem;
+    border:2px #CA4D13 solid;
+	background-color:rgba(235, 237, 239,0.8);
+	box-shadow: 3px 3px 3px #777;
+	
+}
+
+article#content ol#offres > li p{
+	margin:0.2rem;
+}
+
+/* formulaire */
+
+iframe {
+	width :35vw;
+	height:35vh;
+}
+	
+
+form{
+ padding:10px;
+ width:90%;
+}
+
+fieldset 
+{
+ padding:10px;
+ margin-bottom:5px;
+ border:1px solid #CA4D13;
+ }
+
+legend, label 
+{
+ color:#CA4D13;
+ font-size:100%;
+ font-weight:bold;
+ 
+ }
+
+label{
+	display:inline-block;
+	width:5em;
+	margin:0.2em;
+	
+}
+
+input[type="text"], input[type="email"] {
+	width:70%;
+}
+
+textarea {
+	width:70%;
+	min-height:120px;
+}
+
+/* aside */
+
+aside p {
+	border:dashed 1px #648BD8;
+	padding:0.5rem;
+    margin-top:1rem;
+}
+aside span.coachtype{
+    display:block;
+	font-weight: bold;
+	padding-bottom:0.5rem;
+	}
+
+aside a {
+		color:#CA4D13;
+	font-weight: bolder;
+	display:block;
+	padding-top:0.5rem;
+}
+
+
+
+/* footer */
+footer {
+
+	margin-top: 10px;
+text-align:center;
+}

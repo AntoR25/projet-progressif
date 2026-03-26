@@ -1,0 +1,21 @@
+# Autoriser tous les robots (Google, Bing, etc.)
+User-agent: *
+
+# Pages d'administration et fichiers sensibles à ne pas indexer
+Disallow: /admin_panel.php
+Disallow: /adminnews.php
+Disallow: /adminresults.php
+Disallow: /modifier.php
+Disallow: /ajouter.php
+Disallow: /connexion.php
+Disallow: /ia_handler.php
+
+# Dossiers techniques
+Disallow: /css/
+Disallow: /immages/
+
+# Indiquer la page d'accueil comme point d'entrée
+Allow: /index.php
+Allow: /News.php
+Allow: /Results.php
+Allow: /Contact.php
