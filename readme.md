@@ -41,7 +41,7 @@ Pour faire fonctionner ce projet sur votre machine locale (WampServer, Laragon o
    Copiez le dossier `projet-progressif` dans votre répertoire racine (ex: `www/` ou `htdocs/`).
 
 2. **Base de Données** : 
-   - Créez une base de données MySQL nommée `examen` (ou celle définie dans `connexion.php`).
+   - Créez une base de données MySQL nommée `examen` (celle définie dans `connexion.php`).
    - Importez le script SQL pour générer les tables `courreur`, `news` et `utilisateurs`.
 
 3. **Configuration** :
