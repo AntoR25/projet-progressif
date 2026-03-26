@@ -15,7 +15,7 @@ Ce projet a été développé dans le cadre de ma formation en développement We
 
 ### 📊 Gestion du Club (Système CRUD)
 * **Calendrier des Courses** : Liste des événements futurs avec lien dynamique vers **Google Calendar** pour une planification simplifiée.
-* **Tableau des Résultats** : Affichage structuré des performances sportives (temps, distances, lieux).
+* **Tableau des Résultats** : Affichage structuré des performances sportives (temps, distances).
 * **Back-Office Admin** : Panneau de contrôle permettant d'ajouter, modifier ou supprimer des coureurs et des actualités en temps réel via une base de données MySQL.
 
 ### 🤖 Innovation & UX (User Experience)
