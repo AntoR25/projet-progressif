@@ -2,7 +2,7 @@
 > **Plateforme web de gestion et d'animation pour club d'athlétisme.**
 
 ## 📝 Présentation du Projet
-Ce projet a été développé dans le cadre de ma formation en développement Web. Il s'agit d'une application dynamique permettant de centraliser la vie d'un club de course à pied : de la diffusion des résultats officiels à l'accompagnement des coureurs via une intelligence artificielle intégrée.
+Ce projet a été développé dans le cadre de ma formation en développement Web. Il s'agit d'une application dynamique permettant de centraliser la vie d'un club de course à pied : de la diffusion des résultats officiels à l'accompagnement des visiteurs via une intelligence artificielle intégrée.
 
 ---
 
