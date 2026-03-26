@@ -86,4 +86,5 @@ Pour faire fonctionner ce projet sur votre machine locale (WampServer, Laragon o
 ├── robots.txt              # Gestion de l'indexation
 └── readme.md               # Documentation du projet (ce fichier)
 
+<img width="1397" height="887" alt="ifosup running club" src="https://github.com/user-attachments/assets/35de18ce-a10d-4761-89ab-342566043315" />
 
