@@ -1,42 +1,4 @@
 # 🏃‍♂️ IFOSUP Running Club - Wavre
-> **Plateforme web de gestion et d'animation pour club d'athlétisme.**
-
-## 📝 Présentation du Projet
-Ce projet a été développé dans le cadre de ma formation en développement Web. Il s'agit d'une application dynamique permettant de centraliser la vie d'un club de course à pied : de la diffusion des résultats officiels à l'accompagnement des visiteurs via une intelligence artificielle intégrée.
-
----
-
-## 🚀 Fonctionnalités Majeures
-
-### 🔐 Espace Membre & Personnalisation
-* **Authentification sécurisée** : Inscription et connexion gérées par sessions PHP.
-* **Avatars Dynamiques** : Intégration de l'API **Robohash** pour générer un avatar unique à chaque utilisateur connecté (basé sur son nom).
-* **Affichage Conditionnel** : Protection des éléments de l'interface (l'avatar et le menu admin ne s'affichent que si l'utilisateur est authentifié).
-
-### 📊 Gestion du Club (Système CRUD)
-* **Calendrier des Courses** : Liste des événements futurs avec lien dynamique vers **Google Calendar** pour une planification simplifiée.
-* **Tableau des Résultats** : Affichage structuré des performances sportives (temps, distances).
-* **Back-Office Admin** : Panneau de contrôle permettant d'ajouter, modifier ou supprimer des coureurs et des actualités en temps réel via une base de données MySQL.
-
-### 🤖 Innovation & UX (User Experience)
-* **Assistant IA Gemini** : Chatbot intelligent capable de conseiller les membres sur leurs entraînements ou sur les meilleurs parcours de running à Wavre (API Google Generative AI).
-* **Effet Saisonnier (Easter Egg)** : Mode "Hiver" interactif avec animation de neige et sécurité anti-clic (délai de 2 secondes avant de pouvoir "dégeler" le site).
-* **Ergonomie Clavier** : Support de la touche **Entrée** pour l'envoi des messages à l'IA et feedback visuel pendant le chargement des réponses.
-
----
-
-## 🛠️ Stack Technique
-* **Backend** : PHP 8.x (Architecture modulaire).
-* **Base de Données** : MySQL / MariaDB (Requêtes préparées avec **PDO**).
-* **Frontend** : HTML5, CSS3 (Flexbox & Grid), JavaScript (ES6+ / Fetch API).
-* **APIs Externes** : 
-    * **Google Gemini** (Intelligence Artificielle).
-    * **Robohash** (Génération d'avatars).
-    * **FontAwesome 6** (Bibliothèque d'icônes).
-
----
-
-# 🏃‍♂️ IFOSUP Running Club - Wavre
 > **Plateforme web dynamique de gestion pour club d'athlétisme.**
 
 ## 📝 Présentation du Projet
